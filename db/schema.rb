@@ -57,8 +57,8 @@ ActiveRecord::Schema.define(version: 2020_10_22_081055) do
     t.index ["doctor_id"], name: "index_specialties_on_doctor_id"
   end
 
-  add_foreign_key "appointments", "cities"
-  add_foreign_key "doctors", "cities"
-  add_foreign_key "patients", "cities"
-  add_foreign_key "specialties", "doctors"
+    add_foreign_key "appointments", "cities"
+    add_foreign_key "doctors", "cities"
+    add_foreign_key "patients", "cities"
+    add_foreign_key "specialties", "doctors"
 end
